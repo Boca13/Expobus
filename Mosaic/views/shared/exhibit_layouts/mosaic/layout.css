@@ -1,0 +1,64 @@
+.grid { padding-left: 4%; padding-right: 4%; }
+.grid-item { width: 100%; }
+.gutter-sizer { width: 4%; }
+.exhibit-item-caption { display: none; }
+.contenido>.exhibit-item-caption { display: block; float: right; width: 50%; padding: 10px; margin: 0px; }
+.contenido>img { display: block; float: left; width: 50%; overflow: hidden; }
+.zoom { text-align: center; display: none; }
+.masonry, .masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+.highslide-dimming {
+	background-color: #222222;
+}
+.highslide-html-content {
+	height: 80%;
+}
+
+.grid-item {
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.metadatos {
+	display: inline-block;
+	width: 49%;
+	padding-top: 2em;
+    padding-left: 2em;
+	position: inherit;
+	overflow: auto;
+}
+.imagen {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 50%;
+	padding: 1em;
+   	max-height: 60vh;
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	.imagen, .metadatos{ max-width: 49%; min-width: 150px; padding: 8px;}
+}
+@media screen and (max-width: 480px) {
+	.imagen, .metadatos{display: block; width: 100%; margin: 0 auto; position: relative;}
+	.metadatos{padding-left: 0px; width: 85%;}
+}

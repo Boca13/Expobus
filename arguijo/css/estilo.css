@@ -1,0 +1,690 @@
+/*ESTRENO:*/
+/*#footerexpo,#navegacion{display:none;}*/
+html{background-color: black;}
+/* Integración expobus 16 */
+/*  Header */
+#admin-bar{background-color: black;}
+#navegacion{
+	text-align: center;
+	background-color: black;
+	min-height: 40px;
+	font-family: MuseoSans_500;
+    font-size: 14px;
+}
+#navegacion>a{
+	display: inline-block;
+	padding: 5px;
+	margin-left: 2em;
+	color: white;
+	text-decoration: none;
+	margin-top: 8px;
+	font-size: smaller;
+}
+#navegacion>a:hover{
+	color: #d8ae2e;
+}
+#navegacion>span{
+	margin-top: 5px;
+}
+#navegacion>span>a{
+	padding: 3px;
+	color: white;
+	text-decoration: none;
+}
+header{
+	height: 120px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+header>div{
+	display: inline-block;
+	max-height: 120px;
+}
+header>.banner{
+	background-size: contain;
+}
+header>#banner1{
+    height: 120px;
+    width: 120px;
+    background-size: auto 120px;
+	background-repeat: no-repeat;
+}
+header>#banner2{
+	width: 502px;
+    height: 120px;
+	background-size: auto 120px;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+header>#logogrande{
+	border: none;
+	margin-left: -1em;
+}
+header>#logogrande>a>img{
+	
+}
+header>.logobanner{
+	margin: 20px 0em;
+    padding: 0 0.5em;
+    border-left: 1px dotted gray;
+    height: 80px;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
+}
+header>.logobanner>a>img{
+	max-height: 80px;
+}
+#navegacion{
+	height: 100px;
+	background: black;
+	border-top: 5px solid #d8ae2e;
+}
+#navegacion>a{
+	float: left;
+	margin-top: 0;
+	height: 100%;
+	margin-left: 4em;
+}
+#navegacion>a>img{
+	max-height: 100%;
+}
+#navegacion>#biblioteca{
+	margin-right: 10em;
+	float: right;
+	cursor: pointer;
+	z-index: 100;
+}
+/* DROPDOWN */
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    position: absolute;
+    background-color: #d8ae2e;
+    min-width: 17em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: white;
+    margin-left: -1em;
+    text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+    color: white !important;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	color: black !important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	opacity: 1;
+    visibility: visible;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: white;
+}
+#biblioteca{
+	background-color: #d8ae2e;
+	height: 40px;
+	color: black;
+	display: inline-block;
+    margin: 0px 4em;
+	padding: 11px 1em;
+}
+
+/*  Footer */
+footer{
+	min-height: 80px;
+	background-color: #292929;
+	font-size: 13px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2.5em;
+	font-family: MuseoSans_500;
+}
+footer#footerexpo{
+	color: white;
+    background-color: black;
+    min-height: 7em;
+    padding: 1em;
+    width: 100%;
+}
+footer a {
+    color: white;
+}
+footer#footerexpo>#logos{
+	float: left;
+	height: 4em;
+	padding: 0 3em;
+	margin-top: 0.5em;
+	display: inline-block;
+}
+footer#footerexpo>#logos>a{
+	display: inline-block;
+	border-left: #333333 dashed 1px;
+	height: 100%;
+	padding: 0 1em;
+}
+footer#footerexpo>#logos>a>img{
+	height: 100%;
+}
+footer#footerexpo>#footer-text{
+    max-width: 35%;
+    margin: 0 auto;
+    min-width: 25em;
+    width: 25%;
+}
+#footer-text>a:visited,#footer-text>a {
+	color: white;
+	text-decoration: none;
+}
+#footer-text>p{
+	margin: 0;	
+}
+@media screen and (max-width: 1080px){
+	footer#footerexpo>#footer-text{
+    	margin-right: 2em;
+    	display: inline-block;
+	}
+	footer#footerexpo>#logos{
+		float: none;
+	}
+}
+@media screen and (max-width: 600px){
+	footer#footerexpo>#logos>a{
+		border: none;
+	}
+	footer#footerexpo>#footer-text{
+		margin: 0;
+	    max-width: 100%;
+	    min-width: 5em;
+	    width: 100%;
+	    position: relative;
+	}
+}
+
+/*Redes sociales*/
+.social{
+	width: 25%;
+    float: right;
+    margin-top: 1em;
+}
+.icono{background-size: contain; width: 32px; height: 32px; display: inline-block;background-color: white;  border-radius: 6px;}
+.facebook{background-image:url('../images/seticonos/facebook.png');}
+.twitter{background-image:url('../images/seticonos/twitter.png');}
+.flickr{background-image:url('../images/seticonos/flickr.png');}
+.email{background-image:url('../images/seticonos/email.png');}
+.youtube{background-image:url('../images/seticonos/youtube.png');}
+.rss{background-image:url('../images/seticonos/rss.png');}
+
+/* Plugin */
+.cabecera>.fondo>h2 {
+    color: #d8ae2e;
+    font-family: MuseoSans_500;
+    font-size: 48px;
+}
+.cabecera>.fondo>h3 {
+	color: white;
+    font-family: MuseoSans-300;
+    font-size: 36px;
+}
+.caption>p>a{color:white; text-decoration: none;}
+.cuarto{
+	width: 25%;
+	height: 80%;
+	display: inline-block;
+}
+.mitad{
+	width: 50%;
+	height: 80%;
+	display: inline-block;
+}
+.logos{
+	background-image: url('logos.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 8em;
+    margin: 1em 0em;
+}
+@media screen and (max-width: 800px){
+    .mitad,.cuarto{
+		width: 100%;
+	}
+	.imagen,.texto{
+		display: block;
+		width: 100%;
+	}
+	.miniatura{
+		width: 40%;
+	}
+	section#contacto>div{
+		width: 100%;
+	}
+	section#intro>article{
+		width: 100%;
+	}
+	section#ultima>article{
+		width: 66%;
+	}
+	section#ultima{
+		padding: 2em;
+	}
+	#biblioteca{
+		margin: 0px 1em;
+	}
+	nav {
+		text-align: left;
+	}
+	nav>a{
+		margin-left: 1em;
+	}
+	
+}
+/* --- */
+
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.42857143;
+    color: #333;
+}
+@media screen and (max-width : 1920px)
+{
+  body{font-size: 20px;}
+}
+@media screen and (max-width : 1600px)
+{
+  body{font-size: 18px;}
+}
+@media screen and (max-width : 1400px)
+{
+  body{font-size: 16px;}
+}
+@media screen and (max-width : 1280px)
+{
+  body{font-size: 14px;}
+}
+@media screen and (max-width : 1024px)
+{
+  body{font-size: 12px;}
+}
+@media screen and (max-width : 800px)
+{
+  body{font-size: 11px;}
+}
+@media screen and (min-width : 2000px)
+{
+  body{font-size: 22px;}
+}
+.texto>p{font-size: large;}
+h4{padding-bottom: 4px;
+    padding-top: 4px;}
+
+.exhibit-block {
+	clear: both;
+	background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.75);
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 85%;
+    font-family: "Sakkal Majalla";
+    padding: 1em;
+}
+
+.exhibit-block * {font-family: "Sakkal Majalla";}
+
+.exhibit-block.layout-text { font-size: 20px; }
+
+.exhibit-block.layout-preview {padding: 2em !important;  padding-left: 4em !important;}
+
+#menu .current>a, #menu .parent>a {font-weight: bold; text-decoration: underline;}
+
+.exhibit-page {
+	text-align: center;
+}
+h1.block-header { text-transform: uppercase; text-align: center; display: block; font-size: 30px; }
+#creditos {
+	float: right;
+	position: absolute;
+	right: 65px;
+	top: 10%;
+}
+
+#creditos a {
+	margin: 5px;
+}
+
+#slides{
+	/*min-height: 400px;*/
+	display: inline;
+}
+
+.admin-bar exhibits show { vertical-align: bottom; }
+
+a { color: #424242; }
+
+.metadato {
+	margin-bottom: 0;
+	font-size: large;
+}
+
+.metadato.titulo { font-style: italic; font-size: x-large; }
+.metadato.autor {
+	font-weight: bold;
+}
+.metadato.signatura{
+	font-weight: bold;
+}
+.metadato.completo a{color: #9c1f2f}
+.metadato.completo:hover a, .metadato.comentario:hover a{
+	color: #640000;
+}
+
+#contenido {
+  clear: both;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+#exhibit-page-navigation {
+	padding-top: 50px;
+	margin-bottom: 60px;
+}
+
+#exhibit-pages {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 15%;
+}
+
+#exhibit-pages ul {
+    margin-left: 1em;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+#exhibit-pages h4 a{
+  color: #800000;
+}
+
+#nav {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  vertical-align: top;
+  font-family: Lato;
+  font-weight: bold;
+}
+
+#titulo { font-size: 21px; display: inline-block; text-align: left; }
+
+#titulo > a.entrada{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+	color: #A4A4A4;
+	width: 11em;
+    display: inline-block;
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+	#menu { margin-left: 1em; }
+}
+
+@media (max-width: 480px) {
+	#menu > a.entrada { float: none; clear: both; width: 100%; }
+	
+}
+
+#menu { display: inline-block; text-align: center; color: #A4A4A4;}
+
+#menu > a.entrada:hover{
+	color: #FFFFFF;
+}
+
+#menu a:hover, a:focus{
+	color: #800000;
+}
+
+#menu *{
+	vertical-align:top;
+}
+
+#menu > ul {
+	text-transform:uppercase;
+	font-size: 15px;
+}
+
+#menu > ul > li{
+	display: inline-block;
+	padding: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: 15em;
+    text-align: center;
+    margin-left: auto;
+    width: 10em;
+}
+
+#titulo{
+	width: 5em;
+}
+
+.footer-images {
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.footer-images > a {margin-top: 1em;margin-bottom: 1em;}
+
+#pie {
+	margin: auto;
+	width: 80%;
+}
+
+#header{
+	margin: auto;
+	display: block;
+	max-width: 85%;
+}
+#nav>select{
+    	border-radius: 5px;
+    	padding: 5px;
+    	border-width: medium;
+    	font-size: large;
+    	font-family: "Sakkal Majalla";
+    	width: auto;
+	}
+@media screen and (min-width: 768px) {
+	#menu{
+		float: right;
+		max-width: 75%;
+	}
+	#titulo{text-align: left;}
+	.exhibit-block.layout-file-text {width: 85%;padding: 50px; padding-bottom: 0.75em;  padding-top: 1.25em; min-height: 380px;display: flex;}
+	.exhibit-block.layout-file-text>div:first-child{flex:1;}
+	.exhibit-block.layout-file-text>div:nth-child(2){flex:2;}
+	#nav>select{float: right; min-width: 20%; margin: 1.5em;}
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	#nav{text-align: center;}
+	#menu, #titulo{display: block; margin: 0 auto;}
+	#menu > ul {text-align: center;}
+	#menu > ul > li {margin: 0 auto;}
+	#titulo {width: 100%;}
+	#titulo > a.entrada {width: 100%; text-align: center;}
+	.exhibit-block {width: 98%;padding: 10px;}
+	.slidesjs-container, .slidesjs-slide{ height: 60vh !important; }
+	.metadatos {font-size: medium;}
+	.metadato.titulo{font-size: large;}
+	#nav>select{display: inline-block; max-width: 75%; margin: auto;}
+}
+
+@media screen and (max-width: 480px) {
+	#nav{text-align: center;}
+	#menu, #titulo{display: block; margin: 0 auto; width: auto;}
+	#menu > ul > li {margin: 0 auto; display: block; padding-bottom: 0.25em; padding-top: 0.25em;}
+	#menu > ul {text-align: center;}
+	#titulo a.entrada {width: auto; text-align: center; padding-bottom: 0.25em;}
+	.exhibit-block {width: 100%;padding-bottom: 50px;}
+	.footer-images {width: 85%; text-align: center;}
+	.footer-images>a{float: none !important; display: inline-block;}
+	.slidesjs-control,.slidesjs-container,.slidesjs-slide{/*width: 100% !important;height: 100% !important;*/}
+    .metadatos {font-size: medium;}
+	.metadato.titulo{font-size: large;}
+	#nav>select{display: inline-block; max-width: 90%; margin: auto;}
+}
+
+
+
+#exhibit-pages a{
+	color: #000000;
+}
+
+#exhibit-pages a:hover, a:focus{
+	color: #9f1928;
+}
+/* Página de exposiciones */
+#header-full {
+	width: 85%;
+	max-width: 1000px;
+	height: 100%;
+	height: 100vh;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+#expos {
+	width: 85%;
+	margin: auto;
+}
+.exhibit{
+	margin-bottom: 2em;
+	max-width: 33%;
+	background-size: cover;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*.imagen,.description {
+	display: inline-block;
+	max-width: 50%;
+	vertical-align: top;
+}*/
+/* DESPLEGABLES */
+#menu ul ul {
+	height: 0px;
+	opacity: 0;
+	-webkit-transition:height 200ms ease-in, opacity 300ms ease-in-out;
+    -moz-transition:height 200ms ease-in, opacity 300ms ease-in-out;
+    -o-transition:height 200ms ease-in, opacity 300ms ease-in-out;
+    transition:height 200ms ease-in, opacity 300ms ease-in-out;
+}
+
+#menu ul li>ul {
+	-webkit-transition:height 200ms ease-in, opacity 300ms ease-in-out;
+    -moz-transition:height 200ms ease-in, opacity 300ms ease-in-out;
+    -o-transition:height 200ms ease-in, opacity 300ms ease-in-out;
+    transition:height 200ms ease-in, opacity 300ms ease-in-out;
+}
+
+#menu ul li:hover>ul {
+	display: block;
+	opacity: 1;
+	overflow: visible;
+}
+#menu ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#menu ul li {
+	float: left;
+}
+
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+}
+
+#menu ul ul {
+	height: 0px;
+	overflow: hidden;
+}
+
+#menu ul ul li {
+	display: block;
+	opacity: 1;
+	font-weight: normal;
+	float: none;
+	padding: 5px;
+	position: relative;
+}
+
+#menu ul ul ul {
+	position: absolute;
+	left: 75%;
+	top: 0;
+}
+/* ------------ */
+.description {
+	padding: 1em;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.85);
+	transition: opacity 200ms;
+	color: white;
+}
+.description>h2>a{
+	color: white;
+}
+
+.description:hover {
+	padding-left: 1em;
+	opacity: 1;
+}
+@font-face {
+    font-family: MuseoSans_500;
+    src: url('/fuentes/museo_sans/MuseoSans_500.otf');
+	font-weight: 500;
+}
+@font-face {
+    font-family: MuseoSans-300;
+    src: url('/fuentes/museo_sans/MuseoSans-300.otf');
+	font-weight: 300;
+}
+.row{
+	min-height: 70vh;
+}
