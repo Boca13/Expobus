@@ -97,9 +97,9 @@ $(function(){
 <?php if(get_theme_option('cabecera_izquierda')): ?><div class="banner" id="banner1" style="background-image: url('<?php echo(url('files/theme_uploads/'.get_theme_option('cabecera_izquierda')));?>')"></div><?php endif;?>
 
 <?php if(get_theme_option('cabecera_logo1')): ?><div class="logobanner" id="logogrande"><a href="<?php echo(get_theme_option('cabecera_enlace1'));?>"><img src="<?php echo(url('files/theme_uploads/'.get_theme_option('cabecera_logo1')));?>"></a></div><?php endif;?>
-<?php if(get_theme_option('footer_imagenlogo1')): ?><div class="logobanner"><a target="_blank" href="<?php echo(get_theme_option('footer_enlacelogo1'));?>"><img src="<?php echo(url('files/theme_uploads/'.get_theme_option('footer_imagenlogo1')));?>"></a></div><?php endif;?>
-<?php if(get_theme_option('footer_imagenlogo2')): ?><div class="logobanner"><a target="_blank" href="<?php echo(get_theme_option('footer_enlacelogo2'));?>"><img src="<?php echo(url('files/theme_uploads/'.get_theme_option('footer_imagenlogo2')));?>"></a></div><?php endif;?>
-<?php if(get_theme_option('footer_imagenlogo3')): ?><div class="logobanner final"><a target="_blank" href="<?php echo(get_theme_option('footer_enlacelogo3'));?>"><img src="<?php echo(url('files/theme_uploads/'.get_theme_option('footer_imagenlogo3')));?>"></a></div><?php endif;?>
+<?php if(get_theme_option('footer_imagenlogo1')): ?><div class="logobanner"><a target="_blank" href="<?php echo(get_theme_option('footer_enlacelogo1'));?>"><img src="<?php echo(get_theme_option('footer_imagenlogo1'));?>"></a></div><?php endif;?>
+<?php if(get_theme_option('footer_imagenlogo2')): ?><div class="logobanner"><a target="_blank" href="<?php echo(get_theme_option('footer_enlacelogo2'));?>"><img src="<?php echo(get_theme_option('footer_imagenlogo2'));?>"></a></div><?php endif;?>
+<?php if(get_theme_option('footer_imagenlogo3')): ?><div class="logobanner final"><a target="_blank" href="<?php echo(get_theme_option('footer_enlacelogo3'));?>"><img src="<?php echo(get_theme_option('footer_imagenlogo3'));?>"></a></div><?php endif;?>
 
 <?php if(get_theme_option('cabecera_derecha')): ?><div class="banner" id="banner2" style="background-image: url('<?php echo(url('files/theme_uploads/'.get_theme_option('cabecera_derecha')));?>')"></div><?php endif;?>
 </header>
