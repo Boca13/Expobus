@@ -1,3 +1,4 @@
+![Expobus Logo](http://expobus.us.es/omeka/files/theme_uploads/022c3f64b13944bb9243c1106c028ce4.png)
 # Expobus
 [Software developed at the Library of the University of Seville to extend the open source web application Omeka](README.md#english)
 
@@ -134,7 +135,7 @@ The developments by the Library are plugins and themes. Their installation is ve
 Once in these directories, plugins must be installed and enabled from the plugins menu in Omeka, at the admin section. Likewise, themes can be enabled at the appearance tab.
 
 ### License
-The contents of this repository are under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
+The code in this repository is under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0), except for third-party software included, which might have their own license terms. Any graphical contents related to Expobus such as logos are property of the Library of the University of Seville and **are not licensed under any public use or distribution license**. All rights are reserved for this graphics, © Biblioteca de la Universidad de Sevilla, 2017.
 
 
 ## Español
@@ -266,4 +267,4 @@ Los desarrollos de la Biblioteca son plugins y temas. Su instalación es muy sen
 Una vez se encuentren en estos directorios, los plugins deben instalarse y activarse en el menú de plugins de Omeka, en la sección de administración. Asimismo, los temas se pueden activar en la pestaña de apariencia.
 
 ### Licencia
-El contenido de este repositorio está bajo la [licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+El contenido de este repositorio está bajo la [licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0), excepto por el software the terceras partes incluido, que podría tener sus propios términos de licencia. Cualquier contenido gráfico relacioando con Expobus como logotipos son propiedad de la Biblioteca de la Universidad de Sevilla y **no están bajo licencia de uso o distribución públicos**. Todos los derechos reservados para estos gráficos, © Biblioteca de la Universidad de Sevilla, 2017.
