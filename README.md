@@ -117,9 +117,9 @@ OMEKA INSTALLATION
 12. chgrp apache /var/www/omeka -R
 !!! DISABLE SELinux en /etc/selinux/config
 13. setenforce 0
-14. Modificar db.ini
-15. Instalar ImageMagick: yum install ImageMagick
-16. Cambiar idioma en application/config
+14. Modify db.ini
+15. Install ImageMagick: yum install ImageMagick
+16. Change language if needed at application/config
 17. Open in a web browser and finish installation
 18. rm /var/www/omeka/install
  
@@ -235,13 +235,13 @@ BASE DE DATOS
 11. > quit
  
 INSTALACIÓN DE OMEKA
-1. curl -O http://omeka.org/files/omeka-2.3.zip
+1. curl -O http://omeka.org/files/omeka-2.5.zip
 2. yum install unzip
-3. unzip omeka-2.3.zip
-4. rm omeka-2.3.zip
-5. mv omeka-2.3/ /var/www/
+3. unzip omeka-2.5.zip
+4. rm omeka-2.5.zip
+5. mv omeka-2.5/ /var/www/
 6. cd /var/www/
-7. mv omeka-2.3/ omeka
+7. mv omeka-2.5/ omeka
 8. cd omeka
 9. chown omeka . -R
 10. chmod +x *.php -R
