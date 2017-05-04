@@ -6,7 +6,7 @@
 ## English
 ### Developments
 #### Introduction
-The Library of the University of Seville has developed a set of solutions to extend the functionalities of the open source application [Omeka](http://omeka.org) [(more information)](README.md#sabout-omeka), with the purpose of adapt it to its needs. To achieve it, themes and plugins have been developed.
+The Library of the University of Seville has developed a set of solutions to extend the functionalities of the open source application [Omeka](http://omeka.org) [(more information)](README.md#about-omeka), with the purpose of adapt it to its needs. To achieve it, themes and plugins have been developed.
 
 Regarding plugins, one called *Mosaic* has been developed to extend Exhibit Builder, so that more block layouts are available. In addition, a plugin has been created to add support for Google Analytics.
 
