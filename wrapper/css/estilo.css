@@ -1,25 +1,17 @@
+html,body{height: 100%;}
+object#exhibit-show{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	max-width: none;
+}
+
+
 /* Cuadrícula de inicio */
 #admin-bar{background-color: black;}
-/*#exhibit-pages {
+#exhibit-pages {
     background-color: #333333;
     padding: 3em 0;
-}*/
-#slides{max-height: 35em;}
-#plegar{cursor:pointer; color: #d8ae2e;}
-.image>img{max-height: 50px}
-.slidesjs-pagination {
-    list-style: none;
-}
-.slidesjs-pagination>li {
-    display: inline-block;
-}
-.grupoOtras{
-	max-height: 200px;
-}
-#otras>.slides{max-height:200px;overflow: hidden;}
-#otras>.slides>.slidesjs-container,#otras>.slides>.slidesjs-container>.slidesjs-control{
-	max-height: 200px;
-	max-width: 100%;
 }
 /* Portada */
 #portada{
@@ -59,7 +51,11 @@
 /*------*/
 
 /*Redes sociales*/
-footer>.social{width:25%; float: right;}
+.social{
+	width: 25%;
+    float: right;
+    margin-top: 1em;
+}
 .icono{background-size: contain; width: 32px; height: 32px; display: inline-block;background-color: white;  border-radius: 6px;}
 .facebook{background-image:url('../images/seticonos/facebook.png');}
 .twitter{background-image:url('../images/seticonos/twitter.png');}
@@ -67,48 +63,6 @@ footer>.social{width:25%; float: right;}
 .email{background-image:url('../images/seticonos/email.png');}
 .youtube{background-image:url('../images/seticonos/youtube.png');}
 .rss{background-image:url('../images/seticonos/rss.png');}
-
-.separador{
-	min-height: 65px;
-	text-align: center;
-}
-.separador>h1{
-    margin-bottom: 0px;
-	font-family: MuseoSans-100;
-    font-size: 30px;
-    margin-top: 16px;
-}
-.separador>div{
-	width: 0; 
-	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	display: block;
-    margin: 0 auto;
-	bottom: 0;
-}
-.separador>h1::after { 
-    content: "";
-    width: 4.2em;
-    border-bottom: 3px dotted #898979;
-    display: block;
-    margin: 5px auto 5px;
-}
-.blanco>div{
-	border-bottom: 20px solid white;
-}
-.amarillo>div{
-	border-bottom: 20px solid #d8ae2e;
-}
-.negro>div{
-	border-bottom: 20px solid black;
-}
-.gris>div{
-	border-bottom: 20px solid #474747;
-}
-.grisoscuro>div{
-	border-bottom: 20px solid #231f20;
-}
 
 /* Plugin */
 .cabecera>.fondo>h2 {
@@ -124,7 +78,7 @@ footer>.social{width:25%; float: right;}
 .caption>p>a{color:white; text-decoration: none;}
 /* ----- */
 /* Para otras páginas */
-body.item>div, body.item>h1,body.collections>div,body.collections>h1 {
+body.item>div, body.item>h1,body.browse>div,body.browse>h1,body.collections>div,body.collections>h1 {
     margin: 1em auto;
     max-width: 67%;
 }
@@ -486,7 +440,7 @@ body{
 }
 nav{
 	text-align: center;
-	background-color: black !important;
+	background-color: black;
 	min-height: 40px;
 	font-family: MuseoSans_500;
     font-size: 14px;
@@ -539,14 +493,14 @@ header>#banner2{
 }
 header>#logogrande{
 	border: none;
-	margin-left: -18px;
+	margin-left: -1em;
 }
 header>#logogrande>a>img{
 	
 }
 header>.logobanner{
-	margin: 20px 0px;
-    padding: 0 10px;
+	margin: 20px 0em;
+    padding: 0 0.5em;
     border-left: 1px dotted gray;
     height: 80px;
     vertical-align: top;
@@ -562,6 +516,7 @@ section{
 }
 section#intro{
 	min-height: 500px;
+	background-image: url('intro.jpg');
 	padding: 8.5em 0 0;
 	color: white;
 }
@@ -577,13 +532,6 @@ section#lista{
 	padding: 4em 3em 2em;
 	text-align: center;
 }
-section#otras{
-	background-color: #333333;
-	text-align: center;
-	transition: height 500ms ease-in-out, padding 500ms ease-in-out;
-	overflow: hidden;
-	height: 0;
-}
 section#fondoantiguo{
 	min-height: 300px;
 	background-color: #d8ae2e;
@@ -597,7 +545,7 @@ section#expobus{
 	font-family: MuseoSans-300;
 }
 section#contacto{
-	min-height: 300px;
+	min-height: 450px;
 	background-color: #333333;
 	text-align: center;
 	color: white;
@@ -609,9 +557,50 @@ footer{
 	font-size: 13px;
     text-align: center;
     vertical-align: middle;
+    padding: 2.5em;
     font-family: MuseoSans_500;
 }
-
+.separador{
+	min-height: 65px;
+	text-align: center;
+}
+.separador>h1{
+    margin-bottom: 0px;
+	font-family: MuseoSans-100;
+    font-size: 30px;
+    margin-top: 16px;
+}
+.separador>div{
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	display: block;
+    margin: 0 auto;
+	bottom: 0;
+}
+.separador>h1::after { 
+    content: "";
+    width: 4.2em;
+    border-bottom: 3px dotted #898979;
+    display: block;
+    margin: 5px auto 5px;
+}
+.blanco>div{
+	border-bottom: 20px solid white;
+}
+.amarillo>div{
+	border-bottom: 20px solid #d8ae2e;
+}
+.negro>div{
+	border-bottom: 20px solid black;
+}
+.gris>div{
+	border-bottom: 20px solid #474747;
+}
+.grisoscuro>div{
+	border-bottom: 20px solid #231f20;
+}
 #intro>article>h1::after { 
     content: "";
 	width: 5em;
@@ -632,16 +621,14 @@ footer{
 	min-width: 10em;
 	color: white;
 	border-left: 2px solid #d8ae2e;
-	font-size: 16px;
 }
-#ultima>article>h2,#ultima>article>h2>a{
+#ultima>article>h2{
 	color: #d8ae2e;
     font-family: MuseoSans_500;
-    font-size: 1.4em;
+    font-size: 30px;
     text-transform: uppercase;
 	width: 20em;
     margin: 0;
-    text-decoration: none;
 }
 #ultima>article>h3{
 	text-transform: uppercase;
@@ -653,7 +640,7 @@ footer{
 #ultima>article>h3{
 	text-transform: uppercase;
 	font-family: MuseoSans-300;
-	font-size: 1.3em;
+	font-size: 20px;
 }
 #lista>.recuadrado{
 	float: right;
@@ -665,28 +652,18 @@ footer{
 	padding: 5px;
 	margin-top: 1em;
 	margin-bottom: 0.5em;
-	cursor: pointer;
-}
-.recuadrado>a{
-	color: inherit;
-	text-decoration: none;
 }
 #ultima>article>p{
 	font-family: MuseoSans-300;
-}
-#intro>article{
-	font-size: 20px;
+	font-size: 16px;
 }
 #intro>article>p{
 	font-family: MuseoSans-100;
+	font-size: 20px;
 	margin: 0px;
 }
 #intro>article>h3{
 	margin-bottom: 0;
-}
-#intro a{
-	text-decoration: none;
-	color: white;
 }
 .texto{
 	width: 50%;
@@ -712,11 +689,12 @@ footer{
 	text-align: right;
 	padding: 0 1em;
 }
-.imagen>img,.imagen>a,.imagen>a>img{
+.imagen>img{
 	max-height: 100%;
 	max-width: 100%;
 }
-#contacto>div,footer>div{
+#contacto>div{
+	width: 75%;
 	height: 100%;
 	margin: 0 auto;
 	padding: 1em;
@@ -739,18 +717,11 @@ footer{
 	font-size: 16px;
 }
 .columna>p{
-	font-size: medium;
+	font-size: 15px;
 }
 .columna>p>a{
 	color: white;
 	text-decoration: none;
-}
-.columna>a,.columna>p>*{
-	font-size: 15px;
-	color: white;
-	text-decoration: none;
-	display: block;
-	margin: 0.5em auto;
 }
 .buscar{
 	margin-bottom: 1em;
@@ -780,6 +751,7 @@ footer{
 	padding: 5px 2em;
 }
 .logos{
+	background-image: url('logos.png');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -800,7 +772,6 @@ footer{
 	display: inline-block;
 	border: 3px solid #d8ae2e;
 	background-size: cover;
-	font-size: 12px;
 }
 .miniatura>.sombra{
 	background-color: rgba(0,0,0,0.25);
@@ -824,19 +795,20 @@ footer{
 	text-transform: uppercase;
 	margin: 2px;
 	font-family: MuseoSans_500;
-    font-size: 1.25em;
+    font-size: 16px;
 }
 .miniatura>.info>p{
 	text-transform: uppercase;
 	margin: 0 2px;
 	font-family: MuseoSans-300;
+    font-size: 12px;
 }
 .botones{
 	height: 2em;
     width: 10em;
     text-align: center;
-    padding-top: 1em;
-    margin: 0 auto 1em;
+    margin-top: 1em;
+    margin: 1em auto;
 }
 .botones>div{
 	border-radius: 3em;
@@ -850,7 +822,6 @@ footer{
     vertical-align: middle;
     display: inline-block;
     margin: 3px;
-    cursor: pointer;
 }
 .gotop{
 	float: right;
@@ -858,7 +829,6 @@ footer{
 	color: white;
 	font-size: 28px;
 	width: 0;
-    margin: -1px;
 }
 #paginas{
 	display:none;
@@ -901,7 +871,6 @@ footer{
 	display: inline-block;
     margin: 0px 4em;
 	padding: 11px 1em;
-	z-index: 100;
 }
 #biblioteca>ul{
 	/*display: none;*/
@@ -1123,64 +1092,3 @@ nav.pagination:nth-of-type(3) ul, #content > .pagination:nth-of-type(2) {
   text-align: right;
 }
 /*----*/
-.exhibit {
-    display: inline-block;
-}
-.chica{
-	height: 9em;
-	width: 18%;
-}
-/* Adaptación de la fuente para pantallas de alta resolución */
-@media (min-width:1300px){
-	.texto {
-		font-size: 16px;
-	}
-	.miniatura{
-		height: 18em;
-	}
-}
-@media (min-width:1400px){
-	.texto {
-		font-size: 18px;
-	}
-	#ultima>article{
-		font-size: 18px;
-	}
-	.miniatura{
-		height: 20em;
-	}
-}
-@media (min-width:1500px){
-	.texto {
-		font-size: 20px;
-	}
-	#intro>article {
-    	font-size: 24px;
-	}
-	#ultima>article{
-		font-size: 20px;
-	}
-	.miniatura{
-		height: 22em;
-	}
-	#slides {
-    	max-height: 40em;
-	}
-}
-@media (min-width:1920px){
-	.texto {
-		font-size: 22px;
-	}
-	#intro>article {
-    	font-size: 26px;
-	}
-	#ultima>article{
-		font-size: 24px;
-	}
-	.miniatura{
-		height: 25em;
-	}
-	#slides {
-    	max-height: 45em;
-	}
-}
