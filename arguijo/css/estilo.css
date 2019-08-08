@@ -1,6 +1,8 @@
 html{background-color: black;}
-body{background-color: snow;}
-/* Integración expobus 16 */
+body{
+	background-color: snow;
+}
+/* Integraciï¿½n expobus 16 */
 /*  Header */
 #admin-bar{background-color: black;}
 #navegacion{
@@ -440,7 +442,9 @@ a { color: #424242; }
   margin: 0 auto;
   width: 85%;
   vertical-align: top;
+  /* Fuente Original */
   font-family: Lato;
+  /*font-family: 'old_londonregular' !important;*/
   font-weight: bold;
 }
 
@@ -575,7 +579,7 @@ a { color: #424242; }
 #exhibit-pages a:hover, a:focus{
 	color: #9f1928;
 }
-/* Página de exposiciones */
+/* Pï¿½gina de exposiciones */
 #header-full {
 	width: 85%;
 	max-width: 1000px;
@@ -684,6 +688,15 @@ a { color: #424242; }
     src: url('/fuentes/museo_sans/MuseoSans-300.otf');
 	font-weight: 300;
 }
+
+@font-face {
+    font-family: 'FedraSerifB-Normal';
+    src: url('FedraSerifB-Normal.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .row{
 	min-height: 70vh;
 }
